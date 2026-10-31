@@ -1,0 +1,28 @@
+sin Download Manager (sinDL)
+Copyright 2026 sinDL
+
+This product is a modified version of AB Download Manager
+(https://github.com/amir1376/ab-download-manager),
+Copyright 2024-present AB Download Manager App, licensed under the Apache License 2.0.
+sinDL changes its name, look and default settings, and adds features on top of it
+(half-price detection, page grabbing, auto extract and repair, video, torrent,
+security checks and others).
+
+The installer includes these third-party components:
+
+- JetBrains Runtime (OpenJDK), GPL-2.0 with the Classpath Exception
+- libtorrent4j (MIT) and libtorrent (BSD-3-Clause)
+- 7-Zip-JBinding and 7-Zip (LGPL-2.1, with the unRAR license restriction:
+  the code may not be used to re-create the RAR compression algorithm)
+- jsoup (MIT)
+- Kotlin, Compose Multiplatform, Ktor, OkHttp, Koin and other libraries
+  used by AB Download Manager, under their own licenses (mostly Apache-2.0)
+
+These tools are not included; sinDL downloads them from their official releases
+the first time they are needed and checks them against the published SHA-256:
+
+- yt-dlp (Unlicense)
+- FFmpeg builds from yt-dlp/FFmpeg-Builds (GPL)
+- Deno (MIT)
+
+Iranian IP ranges are derived from the RIPE NCC delegated statistics.
