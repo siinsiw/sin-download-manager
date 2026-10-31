@@ -1,29 +1,25 @@
-<div dir="rtl">
-
 # sin Download Manager
 
-مدیر دانلود ویندوز، ساخته‌شده برای اینترنت ایران: نیم‌بها رو تشخیص می‌ده، همه‌ی پارت‌های یه بازی رو یک‌جا می‌گیره، خودش از حالت فشرده درشون میاره، و تورنت رو بدون VPN هم دانلود می‌کنه.
+A Windows download manager built for Iranian internet. It tells you which downloads are half-price, grabs every part of a game in one go, extracts archives on its own, and downloads torrents without a VPN.
 
-**[دانلود آخرین نسخه](https://github.com/siinsiw/sin-download-manager/releases/latest)**: فایل `sinDL_…_windows_x64.exe` رو بگیر و اجرا کن.
+**[Download the latest version](https://github.com/siinsiw/sin-download-manager/releases/latest)**: get `sinDL_…_windows_x64.exe` and run it.
 
-## چی کار می‌کنه
+## What it does
 
-- **نیم‌بها:** کنار هر دانلود نشون می‌ده سروری که فایل رو می‌فرسته ایرانیه یا نه. تغییر مسیرها رو تا CDN آخر دنبال می‌کنه.
-- **همه‌ی پارت‌ها:** لینک صفحه‌ی دانلود رو بده؛ همه‌ی پارت‌ها، رمز آرشیو و لینک‌های جایگزین پیدا می‌شن. فایل متنی لینک‌ها و لینک‌های کپی‌شده هم قبول می‌کنه.
-- **باز کردن خودکار و تعمیر:** وقتی پارت آخر رسید، آرشیو با رمز درست باز می‌شه. اگه پارتی خراب باشه، دقیقاً همون پارت دوباره دانلود می‌شه.
-- **ویدیو:** یوتیوب و سایت‌های دیگه، با کیفیت دلخواه؛ صدا و تصویر خودکار یکی می‌شن.
-- **تورنت:** با موتور libtorrent؛ بدون VPN هم کار می‌کنه و بعد از تموم شدن، آپلود رو قطع می‌کنه.
-- **امنیت:** فایل‌ها به آنتی‌ویروس ویندوز داده می‌شن، سایت‌ها نمی‌تونن بی‌اجازه به برنامه دستور دانلود بدن، و برای فایل‌های بزرگ‌تر از حدی که تعیین می‌کنی ازت اجازه می‌گیره.
-- **بقیه:** صف شبانه با خاموش شدن خودکار، چک فضای دیسک، پیدا کردن دانلودهای تکراری، ادامه‌ی دانلودها بعد از قطع برق.
+- **Half-price detection:** shows whether the server that actually sends a file is inside Iran, following redirects all the way to the final CDN.
+- **Every part at once:** paste a download page and it finds all the parts, the archive password and the mirror links. It also takes a text file of links, or links you copied.
+- **Auto extract and repair:** when the last part arrives, the archive is opened with the right password. If one part is broken, only that part is downloaded again.
+- **Video:** YouTube and other sites at the quality you pick; audio and video are merged automatically.
+- **Torrents:** on libtorrent. Works without a VPN, and stops uploading once a torrent finishes.
+- **Security:** finished files go to Windows antivirus, websites can not send download commands to the app behind your back, and files over a size you choose wait for your permission.
+- **And more:** night queue with automatic shutdown, disk space check, duplicate finder, resuming downloads after a power cut.
 
-## نصب
+## Installing
 
-فایل نصب امضای دیجیتال نداره، برای همین ویندوز ممکنه پیغام «Windows protected your PC» نشون بده. روی **More info** و بعد **Run anyway** بزن.
+The installer is not digitally signed, so Windows may show "Windows protected your PC". Click **More info**, then **Run anyway**.
 
-برای گرفتن دانلودها از مرورگر، افزونه‌ی AB Download Manager رو نصب کن ([کروم و Edge](https://chromewebstore.google.com/detail/bbobopahenonfdgjgaleledndnnfhooj)، [فایرفاکس](https://addons.mozilla.org/firefox/addon/ab-download-manager/)). sinDL با همون افزونه کار می‌کنه.
+To catch downloads from the browser, install the AB Download Manager extension ([Chrome and Edge](https://chromewebstore.google.com/detail/bbobopahenonfdgjgaleledndnnfhooj), [Firefox](https://addons.mozilla.org/firefox/addon/ab-download-manager/)). sinDL works with the same extension.
 
-</div>
+## License
 
----
-
-**sin Download Manager (sinDL)** is a Windows download manager tuned for Iranian internet: half-price server detection, whole-page multi-part grabbing, auto extract and repair, video download with audio merge, torrents that work without a VPN, and Windows antivirus checks. It is built on [AB Download Manager](https://github.com/amir1376/ab-download-manager) by AmirHossein Abdolmotallebi and is distributed under the Apache License 2.0. See [NOTICE](NOTICE) for the third-party components it includes.
+sinDL is built on [AB Download Manager](https://github.com/amir1376/ab-download-manager) by AmirHossein Abdolmotallebi and is distributed under the Apache License 2.0. See [NOTICE](NOTICE) for the third-party components it includes.
